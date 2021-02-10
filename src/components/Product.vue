@@ -25,7 +25,7 @@
 <script>
 import axios from "axios";
 import StarRating from "vue-star-rating"
-const apiURL = "http://92.92.23.194:3000/books"
+const apiURL = "https://localhost:3000/books"
 export default {
   name: "Product",
   props : ["book"],

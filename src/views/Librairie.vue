@@ -18,7 +18,7 @@
 import Product from "../components/Product";
 import Carousel from '../components/Carousel';
 import axios from "axios";
-const apiURL = "http://92.92.23.194:3000/books"
+const apiURL = "https://localhost:3000/books"
 export default {
   name: "Librairie",
   components: {Carousel, Product},

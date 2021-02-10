@@ -23,29 +23,13 @@
 </template>
 
 <script>
-import axios from "axios";
 import StarRating from "vue-star-rating"
-const apiURL = "https://localhost:3000/books"
 export default {
   name: "Product",
   props : ["book"],
-  components: {StarRating},
-  created() {
-    this.fetchData()
-  },
-  methods : {
-    fetchData: async function () {
-      try {
-        const response = await axios.get(apiURL + this.book.id)
-        this.json.push(response.data)
-      } catch (error) {
-        console.log(error);
-      }
-    }
-  }
-
-
+  components: {StarRating}
 }
+
 </script>
 
 <style scoped>

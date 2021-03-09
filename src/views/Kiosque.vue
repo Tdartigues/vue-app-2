@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-3">
           <h1 class="my-4">Le bistrot des sport</h1>
-          <h2 class="my-3"> Livres </h2>
+          <h2 class="my-3"> Kiosque </h2>
         </div>
         <div class="col-lg-9">
           <div class="row">
@@ -19,9 +19,9 @@
 import Product from "../components/Product";
 import Carousel from '../components/Carousel';
 import axios from "axios";
-const apiURL = "http://localhost:3000/books"
+const apiURL = "http://localhost:3001/magazines"
 export default {
-  name: "Librairie",
+  name: "Kiosque",
   components: {Carousel, Product},
   created() {
     this.fetchData()

@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Admin from "../views/Admin.vue";
 import Librairie from "../views/Librairie";
+import Kiosque from "../views/Kiosque";
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,11 @@ const routes = [
     path: '/Librairie',
     name: 'Librairie',
     component: Librairie
+  },
+  {
+    path: '/Kiosque',
+    name: 'Kiosque',
+    component: Kiosque
   },
   {
     path: '/Admin',

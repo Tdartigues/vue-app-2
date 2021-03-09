@@ -5,8 +5,18 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
-  name: "Admin.vue"
+  name: "Admin.vue",
+  data() {
+    return{
+      books : [],
+      mag : []
+    }
+  },
+  methods : {
+
+  }
 }
 </script>
 
